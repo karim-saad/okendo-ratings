@@ -19,7 +19,7 @@
   border-radius: 3px;
   width: 50%;
   margin: 30px auto 30px auto;
-  padding: 1px 10px 1px 10px;
+  padding: 1px 10px 10px 10px;
   box-shadow: 2px 2px #e3e3e3;
 }
 
@@ -90,17 +90,121 @@
   background: #999999;
 }
 
-.Button-choose-one {
+.Button-text {
+  margin: 6px 10px 6px 10px;
+}
+
+.Button-disabled-text {
+  margin: 6px 10px 6px 10px;
+  color: #757575;
+}
+
+.Button-off {
   background: #b3b3b3;
   border-radius: 3px;
   margin: 4px 4px 4px 0px;
   transition: 0.2s;
 }
 
-.Button-choose-one:hover {
+.Button-off:hover {
   background: #999999;
 }
 
-.Button-text {
-  margin: 6px 10px 6px 10px;
+.Button-on {
+  background: #39c498;
+  border-radius: 3px;
+  margin: 4px 4px 4px 0px;
+}
+
+.Button-disabled {
+  background: #b3b3b3;
+  border-radius: 3px;
+  margin: 4px 4px 4px 0px;
+  cursor: not-allowed;
+}
+
+.Rating-button-container {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.Rating-button-off {
+  background: #b3b3b3;
+  border-color: #b3b3b3;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  height: 25px;
+  width: 25px;
+  z-index: 1;
+}
+
+.Rating-button-off:hover {
+  border-color: #39c498;
+  background: #ffffff;
+  transition: 0.2s;
+}
+
+.Rating-button-off-text {
+  margin: 1px 1px 1px 1px;
+  font-size: 16px;
+  z-index: 1;
+}
+
+.Rating-button-off-text:hover {
+  color: #39c498;
+}
+
+.Rating-button-on {
+  background: #39c498;
+  border-color: #39c498;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  height: 25px;
+  width: 25px;
+  z-index: 1;
+}
+
+.Rating-button-on:hover {
+  border-color: #39c498;
+  background: #ffffff;
+  transition: 0.2s;
+}
+
+.Rating-button-on-text {
+  margin: 1px 1px 1px 1px;
+  font-size: 16px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.Rating-button-on-text:hover {
+  color: #39c498;
+}
+
+.Rating-line-container {
+  position: relative;
+  top: -20px;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 0;
+}
+
+.Line-off {
+  height: 5px;
+  width: 25%;
+  background: #b3b3b3;
+  margin: 0px 5px 0px 5px;
+  z-index: 0;
+}
+
+.Line-on {
+  height: 5px;
+  width: 25%;
+  background: #39c498;
+  margin: 0px 5px 0px 5px;
+  z-index: 0;
 }

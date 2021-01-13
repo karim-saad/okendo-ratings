@@ -20,12 +20,14 @@ class CountrySelector extends Component {
 
   render() {
     return (
-      <Select
-        options={this.state.options}
-        value={this.state.value}
-        onChange={this.changeHandler}
-        placeholder={this.props.placeholder}
-      />
+      <div className='Country-select'>
+        <Select
+          options={this.state.options}
+          value={this.state.value}
+          onChange={this.changeHandler}
+          placeholder={this.props.placeholder}
+        />
+      </div>
     )
   }
 }

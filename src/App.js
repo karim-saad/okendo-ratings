@@ -1,9 +1,10 @@
 //import logo from './logo.svg';
-import Progress from './components/progress.jsx';
 import './App.css';
+import ButtonSelectAge from './components/button-select-age.jsx';
+import ButtonSelectGift from './components/button-select-gift.jsx';
 import CountrySelector from './components/country-selector.jsx';
-import ButtonStandout from './components/button-standout.jsx';
-import ButtonChooseOne from './components/button-choose-one.jsx';
+import ButtonSelectStandouts from './components/button-select-standouts.jsx';
+import RatingsBar from './components/ratings-bar.jsx';
 
 function App() {
   return (
@@ -16,32 +17,22 @@ function App() {
           <p class='Category-text'>
             Quality
           </p>
-          <Progress></Progress>
+          <RatingsBar />
           <p class='Category-text'>
             Design
           </p>
+          <RatingsBar />
           <p class='Category-text'>
             Experience
           </p>
+          <RatingsBar />
           <p class='Category-text'>
             Product Standouts
           </p>
           <p className='Category-subtext'>
             Choose up to 5 that best apply (optional)
           </p>
-          <div className='Product-standout-container'>
-            <ButtonStandout buttonName='Accurate Timekeeping' />
-            <ButtonStandout buttonName='High Quality' />
-            <ButtonStandout buttonName='Durable' />
-            <ButtonStandout buttonName='Elegant' />
-            <ButtonStandout buttonName='Good Weight' />
-            <ButtonStandout buttonName='Versatile' />
-            <ButtonStandout buttonName='Looks Expensive' />
-            <ButtonStandout buttonName='Attracts Compliments' />
-            <ButtonStandout buttonName='Unique' />
-            <ButtonStandout buttonName='Great Gift' />
-            <ButtonStandout buttonName='Great Value' />
-          </div>
+          <ButtonSelectStandouts />
           <p class='Category-text'>
             <b>About You</b>
           </p>
@@ -51,33 +42,18 @@ function App() {
           <p class='Category-subtext'>
             Choose <b>one</b>
           </p>
-          <div className='Age-range-container'>
-            <ButtonChooseOne buttonName='Under 18' />
-            <ButtonChooseOne buttonName='18 - 24' />
-            <ButtonChooseOne buttonName='25 - 34' />
-            <ButtonChooseOne buttonName='35 - 44' />
-            <ButtonChooseOne buttonName='45 - 54' />
-            <ButtonChooseOne buttonName='54 - 64' />
-            <ButtonChooseOne buttonName='65+' />
-          </div>
+          <ButtonSelectAge />
           <p class='Category-text'>
             Bought For
           </p>
           <p class='Category-subtext'>
             Choose <b>one</b>
           </p>
-          <div className='Bought-for-container'>
-            <ButtonChooseOne buttonName='Personal Use' />
-            <ButtonChooseOne buttonName='Gift' />
-          </div>
+          <ButtonSelectGift />
           <p class='Category-text'>
             Country
           </p>
-          <div className='Country-select'>
-            <CountrySelector
-              placeholder='Australia'>
-            </CountrySelector>
-          </div>
+          <CountrySelector placeholder='Australia' />
         </div>
         <div className='Next-container'>
           <p className='Next-text'>
