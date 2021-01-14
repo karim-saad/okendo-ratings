@@ -1,10 +1,11 @@
 //import logo from './logo.svg';
 import './App.css';
-import ButtonSelectAge from './components/button-select-age.jsx';
-import ButtonSelectGift from './components/button-select-gift.jsx';
-import CountrySelector from './components/country-selector.jsx';
-import ButtonSelectStandouts from './components/button-select-standouts.jsx';
-import RatingsBar from './components/ratings-bar.jsx';
+import ButtonSelectAge from './components/button-select-age';
+import ButtonSelectGift from './components/button-select-gift';
+import CountrySelector from './components/country-selector';
+import ButtonSelectStandouts from './components/button-select-standouts';
+import RatingsBar from './components/ratings-bar';
+import RatingSubheading from './components/rating-subheading'
 
 function App() {
   return (
@@ -18,14 +19,17 @@ function App() {
             Quality
           </p>
           <RatingsBar />
+          <RatingSubheading />
           <p className='Category-text'>
             Design
           </p>
           <RatingsBar />
+          <RatingSubheading />
           <p className='Category-text'>
             Experience
           </p>
           <RatingsBar />
+          <RatingSubheading />
           <p className='Category-text'>
             Product Standouts
           </p>
