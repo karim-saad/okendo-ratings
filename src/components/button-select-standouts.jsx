@@ -19,7 +19,9 @@ function ButtonSelectStandouts() {
     if (isSelected(id)) {
       const index = selected.indexOf(id);
       if (index > -1) {
+        console.log(selected);
         selected.splice(index, 1);
+        console.log(selected);
         setSelected(selected);
       }
     } else if (!isSelected(id) && !isDisabled(id)) {

@@ -12,7 +12,7 @@ function RatingsBar() {
   }
 
   const isLineSelected = (id) => {
-    return id < ratingSelected ? true : false
+    return id <= ratingSelected ? true : false
   }
 
   return (
@@ -24,8 +24,8 @@ function RatingsBar() {
         ))}
       </div>
       <div className='Rating-line-container'>
-        {lines.map((line, id) => (
-          isLineSelected(id) ? <div className='Line-on' /> : <div className='Line-off' />
+        {lines.map((line) => (
+          isLineSelected(line) ? <div className='Line-on' /> : <div className='Line-off' />
         ))}
       </div>
     </div>

@@ -14,43 +14,43 @@ function App() {
           Ratings
         </p>
         <div className='Rating-container'>
-          <p class='Category-text'>
+          <p className='Category-text'>
             Quality
           </p>
           <RatingsBar />
-          <p class='Category-text'>
+          <p className='Category-text'>
             Design
           </p>
           <RatingsBar />
-          <p class='Category-text'>
+          <p className='Category-text'>
             Experience
           </p>
           <RatingsBar />
-          <p class='Category-text'>
+          <p className='Category-text'>
             Product Standouts
           </p>
           <p className='Category-subtext'>
             Choose up to 5 that best apply (optional)
           </p>
           <ButtonSelectStandouts />
-          <p class='Category-text'>
+          <p className='Category-text'>
             <b>About You</b>
           </p>
-          <p class='Category-text'>
+          <p className='Category-text'>
             Age Range
           </p>
-          <p class='Category-subtext'>
+          <p className='Category-subtext'>
             Choose <b>one</b>
           </p>
           <ButtonSelectAge />
-          <p class='Category-text'>
+          <p className='Category-text'>
             Bought For
           </p>
-          <p class='Category-subtext'>
+          <p className='Category-subtext'>
             Choose <b>one</b>
           </p>
           <ButtonSelectGift />
-          <p class='Category-text'>
+          <p className='Category-text'>
             Country
           </p>
           <CountrySelector placeholder='Australia' />
