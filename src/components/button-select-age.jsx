@@ -13,8 +13,8 @@ function ButtonSelectAge() {
   return (
     <div className='Age-range-container'>
       {ages.map((age, id) => (
-        isSelected(id) ? <ButtonOn name={age} onClick={() => setSelected(id)} /> :
-          <ButtonOff name={age} onClick={() => setSelected(id)} />
+        isSelected(id) ? <ButtonOn name={age} onClick={() => setSelected(id)} key={id} /> :
+          <ButtonOff name={age} onClick={() => setSelected(id)} key={id} />
       ))}
     </div>
   )

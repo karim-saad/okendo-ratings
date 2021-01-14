@@ -19,13 +19,13 @@ function RatingsBar() {
     <div className='Rating-bar-container'>
       <div className='Rating-button-container'>
         {ratings.map((rating, id) => (
-          isRatingSelected(id) ? <RatingButtonOn number={rating} onClick={() => setRatingSelected(id)} /> :
-            <RatingButtonOff number={rating} onClick={() => setRatingSelected(id)} />
+          isRatingSelected(id) ? <RatingButtonOn number={rating} onClick={() => setRatingSelected(id)} key={id} /> :
+            <RatingButtonOff number={rating} onClick={() => setRatingSelected(id)} key={id} />
         ))}
       </div>
       <div className='Rating-line-container'>
         {lines.map((line) => (
-          isLineSelected(line) ? <div className='Line-on' /> : <div className='Line-off' />
+          isLineSelected(line) ? <div className='Line-on' key={line} /> : <div className='Line-off' key={line} />
         ))}
       </div>
     </div>
