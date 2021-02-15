@@ -1,4 +1,3 @@
-//import logo from './logo.svg';
 import './App.css';
 import ButtonSelectAge from './components/button-select-age';
 import ButtonSelectGift from './components/button-select-gift';
@@ -10,7 +9,7 @@ import RatingSubheading from './components/rating-subheading'
 function App() {
   return (
     <div className='App'>
-      <header className='App-container'>
+      <div className='App-container'>
         <p className='Title-text'>Ratings</p>
         <div className='Rating-container'>
           <p className='Category-text'>Quality</p>
@@ -22,9 +21,7 @@ function App() {
           <p className='Category-text'>Experience</p>
           <RatingsBar />
           <RatingSubheading />
-          <p className='Category-text'>
-            Product Standouts
-          </p>
+          <p className='Category-text'>Product Standouts</p>
           <p className='Category-subtext'>Choose up to 5 that best apply (optional)</p>
           <ButtonSelectStandouts />
           <p className='Category-text'><b>About You</b></p>
@@ -38,11 +35,9 @@ function App() {
           <CountrySelector placeholder='Australia' />
         </div>
         <div className='Next-container'>
-          <p className='Next-text'>
-            Next
-          </p>
+          <p className='Next-text'>Next</p>
         </div>
-      </header>
+      </div>
     </div >
   );
 }
